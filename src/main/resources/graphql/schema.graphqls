@@ -1,0 +1,19 @@
+
+type Query{
+    findAllAddress:[Address]
+}
+
+
+type Mutation{
+    editAddress(id:String,newCity:String):Address
+}
+
+type Subscription{
+    getAllAddressFlux : [Address]
+}
+
+type Address{
+    _id: ID
+    city: String
+    district:String
+}
